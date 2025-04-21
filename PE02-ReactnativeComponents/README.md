@@ -3,13 +3,16 @@
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 # Input
-There is no user input for this mobile application. The content is hard-coded in the React Native code. The program uses three text values: the student's name, their degree program (e.g., MSCS), and their school (City University of Seattle). These values are set directly within the `Text` components.
+
+The program allows the user to enter their favorite MSCS course via a `TextInput` field. Additionally, the `icon.png` image is statically loaded from the `./assets` directory to be displayed at the top of the screen.
 
 # Process
-This program uses the React Native framework and is executed within the Expo development environment. When the application runs, it loads the `App.js` file. A single `View` component wraps three `Text` components. The app also uses a `StyleSheet` to control layout and appearance. The container view centers the text and sets the background to yellow, while the text is styled to have spacing and appropriate size. No conditional logic or data manipulation occurs in this program.
+
+The application is a React Native functional component created using an arrow function. It uses the core components: `View`, `Text`, `ScrollView`, `Image`, `TextInput`, and `StyleSheet`. The program processes the user’s input in real-time with the `useState` hook and updates the UI dynamically. The course list is mapped from an array and displayed using multiple `Text` components inside a scrollable view.
 
 # Output
-The output is a mobile screen displaying the user’s name, degree program, and school name. All text is shown against a yellow background, centered both vertically and horizontally.
+
+The output is a neatly styled, scrollable screen that displays the university’s MSCS course list, the user’s favorite course, and a logo image. The app visually responds as the user types their course of choice, showing immediate updates on screen. It provides a smooth and responsive UI for learning core React Native layout and input features.
 
 ## Get started
 

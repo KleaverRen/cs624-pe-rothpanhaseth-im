@@ -10,14 +10,11 @@ import {
   StyleSheet,
   Alert,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 
 const CitiesScreen = ({ cities, addCityToList }) => {
   // Receive cities and addCityToList as props
   const [cityName, setCityName] = useState("");
   const [cityCountry, setCityCountry] = useState(""); // To store the country of the city
-
-  const navigation = useNavigation();
 
   const handleAddCity = () => {
     if (cityName.trim() === "" || cityCountry.trim() === "") {

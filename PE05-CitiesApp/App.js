@@ -59,16 +59,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  screenContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  screenText: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-});

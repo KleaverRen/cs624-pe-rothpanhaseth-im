@@ -20,13 +20,7 @@ import { colors } from "./src/theme";
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-function CitiesStackScreen({
-  navigation,
-  route,
-  cities,
-  addCity,
-  addLocation,
-}) {
+function CitiesStackScreen({ cities, addCity, addLocation }) {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -62,13 +56,7 @@ function CitiesStackScreen({
   );
 }
 
-function CountriesStackScreen({
-  navigation,
-  route,
-  countries,
-  addCountry,
-  addCurrency,
-}) {
+function CountriesStackScreen({ countries, addCountry, addCurrency }) {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -117,7 +105,7 @@ export default class App extends Component {
   };
   addCountry = (country) => {
     this.setState((prevState) => ({
-      countries: [...prevState.countries, { ...country, currencys: [] }],
+      countries: [...prevState.countries, { ...country, currencies: [] }],
     }));
   };
 

@@ -56,7 +56,7 @@ class Country extends React.Component {
             ]}
           >
             {!updatedCountry.currencies.length && (
-              <CenterMessage message="No currencies for this city!" />
+              <CenterMessage message="No currencies for this country!" />
             )}
             {updatedCountry.currencies.map((currency, index) => (
               <View key={index} style={styles.locationContainer}>
